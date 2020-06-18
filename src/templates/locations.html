@@ -2,8 +2,15 @@
 
 {% block header %}
     <h1>{% block title %}Locations{% endblock %}</h1>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/locations.css') }}">
 {% endblock %}
 
 {% block content %}
-    <p>test locations</p>
+    <body>
+        <p>test locations</p>
+        <div id="map"></div>
+        <!-- dynamically loads the Maps Javascript API inline -->
+        <script src="{{ url_for('static', filename='/js/load_api.js') }}"></script>
+    </body>
+    <script src="{{ url_for('static', filename='/js/map.js') }}"></script>
 {% endblock %}

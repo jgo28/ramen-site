@@ -13,3 +13,4 @@ build/
 *.egg-info/
 .code-workspace
 .vscode
+src/static/js/load_api.js
