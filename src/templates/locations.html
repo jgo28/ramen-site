@@ -7,10 +7,40 @@
 
 {% block content %}
     <body>
-        <p>test locations</p>
-        <div id="map"></div>
-        <!-- dynamically loads the Maps Javascript API inline -->
-        <script src="{{ url_for('static', filename='/js/load_api.js') }}"></script>
+        <div class="location-container">
+            <div class="row">
+                <div class="col-md-8">
+                <!-- <div id="map" class="img-fluid"></div> -->
+                <img class="img-fluid" src="not-found.png">
+                <!-- dynamically loads the Maps Javascript API inline -->
+                <!-- <script src="{{ url_for('static', filename='/js/load_api.js') }}"></script> -->
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <div class="location-item">
+                        <h5>Restaurant 1</h5>
+                        1234 Abcde Ave SW City, Country 12345<br>
+                        Phone: (123) 456-7891 <br>
+                        Hours: 8AM - 8PM<br>
+                        Open: All Week <br>
+                    </div>
+                    <div class="location-item">
+                        <h5>Restaurant 2</h5>
+                        1234 Abcde Ave SW City, Country 12345<br>
+                        Phone: (123) 456-7891 <br>
+                        Hours: 8AM - 8PM<br>
+                        Open: All Week <br>
+                    </div>
+                    <div class="location-item">
+                        <h5>Restaurant 3</h5>
+                        1234 Abcde Ave SW City, Country 12345<br>
+                        Phone: (123) 456-7891 <br>
+                        Hours: 8AM - 8PM<br>
+                        Open: All Week <br>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
-    <script src="{{ url_for('static', filename='/js/map.js') }}"></script>
+    <!-- <script src="{{ url_for('static', filename='/js/map.js') }}"></script> -->
 {% endblock %}

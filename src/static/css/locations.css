@@ -2,8 +2,29 @@
     Styling for locations page and the Google maps 
 */
 
+img {
+    /* Placeholder image */
+    max-height: 75vh;
+    width: 100%;
+    background: url(http://goo.gl/vyAs27) no-repeat scroll 0 0;
+}
+
+.location-container {
+    /* Contains the list of locations */
+    width: 100%;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.location-item {
+    /* Each location in the list of locations */
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
 #map {
     /* Google map */
-    height: 400px;
-    width: 80%;
+    height: 75vh;
+    width: 100%;
 }
