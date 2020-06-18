@@ -1,34 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>{% block title %}{% endblock %}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="{{ url_for('static', filename='/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
-    </head>
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Ramen</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="{{ url_for('menu') }}">Menu</a>
-                <a class="nav-item nav-link" href="{{ url_for('locations') }}">Locations</a>
-            </div>
-        </div>
-    </nav>
+{% extends 'index.html' %}
 
-    <section class="content">
-    <header>
-        {% block header %}{% endblock %}
-    </header>
-    <!-- Where the content of the webpages will appear -->
-    {% block content %}
-    {% endblock %}
-   </section>
-    
-    <!--Load required Bootstrap files-->
-    <script src="{{ url_for('static', filename='/js/bootstrap.min.js') }}"></script>
-</html> 
+{% block header %}
+    <h1>{% block title %}Home{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <p>test home item</p>
+{% endblock %}
