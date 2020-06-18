@@ -1,0 +1,39 @@
+img {
+    /* Placeholder image */
+    width:200px;
+    height:200px;
+    background: url(http://goo.gl/vyAs27) no-repeat scroll 0 0;
+}
+
+.menu-container {
+    width: 100%;
+    /* padding-right: 15px;
+    padding-left: 15px; */
+    padding-bottom: 30px;
+    /* margin-right: auto;
+    margin-left: auto; */
+}
+
+@media (min-width: 576px) {
+    .menu-container {
+      max-width: 540px;
+    }
+  }
+  
+@media (min-width: 768px) {
+    .menu-container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .menu-container {
+        max-width: 960px;
+    }
+}
+  
+@media (min-width: 1200px) {
+    .menu-container {
+        max-width: 1140px;
+    }
+}

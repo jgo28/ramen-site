@@ -1,7 +1,9 @@
-/* Styling for locations page and the Google maps */
+/* 
+    Styling for locations page and the Google maps 
+*/
 
-/* Google map */
 #map {
+    /* Google map */
     height: 400px;
-    width: 100%;
+    width: 80%;
 }

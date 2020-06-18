@@ -3,11 +3,13 @@
     <head>
         <title>{% block title %}{% endblock %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Load CSS files -->
         <link href="{{ url_for('static', filename='/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
+        <link href="{{ url_for('static', filename='/css/main.css') }}" rel="stylesheet" media="screen">
     </head>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Ramen</a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand">Ramen</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,12 +23,9 @@
     </nav>
 
     <section class="content">
-        <header>
-            {% block header %}{% endblock %}
-        </header>
+        <header>{% block header %}{% endblock %}</header>
         <!-- Where the content of the webpages will appear -->
-        {% block content %}
-        {% endblock %}
+        {% block content %}{% endblock %}
    </section>
     
     <!--Load required Bootstrap files-->

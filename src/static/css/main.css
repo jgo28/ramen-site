@@ -1,0 +1,12 @@
+/*
+    Styling that applies to all web pages. 
+*/
+
+html, body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
