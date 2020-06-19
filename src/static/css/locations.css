@@ -9,14 +9,6 @@ img {
     /* background: url(http://goo.gl/vyAs27) no-repeat scroll 0 0; */
 }
 
-.location-container {
-    /* Contains the list of locations */
-    width: 100%;
-    padding: 20px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .location-item {
     /* Each location in the list of locations */
     margin-top:10px;
